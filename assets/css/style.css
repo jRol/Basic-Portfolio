@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    position: relative;
     width: 960px;
     margin: 0 auto;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;        
@@ -15,26 +16,47 @@ body {
     background: #dddddd;
     font-size: 18px;
     line-height: 32px;
+    min-height: 100%;
 }
 
 nav {
+    position: fixed;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    z-index: 3;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #cccccc;
     background: #ffffff;
 }
 
 section {
+    position: relative;
+    top: 140px;
+    padding: 20px;
+    margin-bottom: 100px;
+    border: 1px solid #dddddd;
     background: #ffffff;
 }
 
 header {
     clear: both;
+    padding: 0 20px 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #cccccc;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 a {
     text-decoration: none;
+    color: #777777; 
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
 }
 
 li {
@@ -46,16 +68,94 @@ img {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
     clear: both;
     overflow: hidden;
+    width: 100%;
     text-align: center;
+    color: #ffffff;
+    background: #666666;
+    font-size: 10px;
 }
+
 
 .logo {
     float: left;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    left: 315px;
+    color: #ffffff;
     background: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
 }
 
 .main-nav {
-    color: white;
+    float: right;
+    padding: 20px;
+    margin: 0 270px 0 0;
+}
+
+.right-nav {
+    margin: 0 10px;
+    color: #777777; 
+}
+
+.prof-pic {
+    margin: 0 20px 20px 0;
+}
+
+.about-content {
+    margin: 15px 0;
+}
+
+.form-field {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}
+
+.form-text-area {
+    height: 250px;
+}
+
+.form-btn {
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #4aaaa5;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.gallery {
+    overflow: hidden;
+    background: #ffffff;
+    padding: 0;
+}
+
+.gallery-img {
+    position: relative;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.gallery-img-dim {
+    width: 300px;
+    height: 200px;
+}
+
+.img-txt {
+    position: absolute;
+    bottom: -10px;
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    background: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
